@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
+  <meta charset="utf-8">
   <title>せらく銀行</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scripts/slick.css">
+  <link rel="stylesheet" href="scripts/slick-theme.css">
 </head>
 <body>
     <header>
       <div class="container header-inner">
-        <div id="logo">
-          <img src="images/logo.png">
+        <div class="logo">
+          <img src="images/logo.png" alt="せらく銀行">
         </div>
 
-        <div id="header-tool">
-          <div id="bankcode">
+
+        <div class="header-tool">
+          <div class="bankcode">
             <div class="shita">
               <p>金融機関コード: 0917</p>
             </div>
           </div>
 
-          <div id="text-size">
+          <div class="text-size">
             <p>文字の大きさが変更できます</p>
             <div class="text-size--btn">
               <img src="images/fontsize_s.png" alt="小">
@@ -27,7 +31,7 @@
             </div>
           </div>
 
-          <div id="extools">
+          <div class="extools">
             <ul class="english">
               <li><img src="images/globalsite.png" alt="global site"></li>
               <li><img src="images/sitemap.png" alt="sitemap"></li>
@@ -35,7 +39,7 @@
             <form action="submit">
               <ul class="search">
                 <li><input type="text"></li>
-                <li><input type="image" src="images/search_btn.jpg"></li>
+                <li><input type="image" src="images/search_btn.jpg" alt="検索"></li>
               </ul>
             </form>
           </div>
@@ -43,22 +47,30 @@
 
       </div>
       <nav>
-<!--           <ul class="nav-menu">
-          <li class="menu--item">個人のお客様</li>
-          <li>法人のお客様</li>
-          <li>株主・投資家の皆様</li>
-          <li>採用情報</li>
-          <li>せらく銀行について</li>
-        </ul> -->
+
       </nav>
     </header>
 
 
     <main class="container">
       <div class="content">
-        <div id="top-slide">
+
+        <!-- Slick slideshow here -->
+        <div class="slide-area">
+          <div class="slideshow">
+            <div><img src="images/new1.jpg" alt="せらく銀行 かりる・ためる・ふやすなら信頼のせらく銀行へ"></div>
+            <div><img src="images/new2.jpg" alt="お知らせ2"></div>
+            <div><img src="images/new3.jpg" alt="お知らせ3"></div>
+          </div>
+          <div class="slide-nav">
+            <div class="slide-nav--thumb"><img src="images/thum_1.jpg" alt="せらく銀行"></div>
+            <div class="slide-nav--thumb"><img src="images/thum_2.jpg" alt="外貨自動積立サービス"></div>
+            <div class="slide-nav--thumb"><img src="images/thum_3.jpg" alt="せらく銀行カードローン"></div>
+          </div>
         </div>
+
         <div class="pages">
+
           <h3>個人のお客様</h3>
           <ul class="pagelist">
             <li class="pagelist--item"><a href="dummy.html">口座をひらく</a></li>
@@ -69,6 +81,7 @@
             <li class="pagelist--item"><a href="dummy.html">キャンペーン一覧</a></li>
           </ul>
         </div>
+
         <div class="pages">
           <h3>法人のお客様</h3>
           <ul class="pagelist">
@@ -80,11 +93,13 @@
             <li class="pagelist--item"><a href="dummy.html">Global Website</a></li>
           </ul>
         </div>
+
         <div class="pages">
           <h3>株主・投資家の皆様</h3>
           <ul class="pagelist">
             <li class="pagelist--item"><a href="dummy.html">決算公告</a></li>
             <li class="pagelist--item"><a href="dummy.html">社債情報</a></li>
+          </ul>
         </div>
         <div class="pages">
           <h3>採用情報</h3>
@@ -92,6 +107,7 @@
             <li class="pagelist--item"><a href="dummy.html">新卒採用</a></li>
             <li class="pagelist--item"><a href="dummy.html">中途採用</a></li>
             <li class="pagelist--item"><a href="dummy.html">海外現地採用</a></li>
+          </ul>
         </div>
 
         <div class="news-area">
@@ -161,27 +177,30 @@
           </ul>
           <p>パスワードを忘れた方はこちら</p>
         </div>
-        <ul class="services">
+        <div class="services">
           <h2>サービスのご案内</h2>
-          <li class="services--item">
-            <img src="images/annai_01.png" alt="店舗ATM検索">
-          </li>
-          <li class="services--item">
-            <img src="images/annai_02.png" alt="資料請求">
-          </li>
-          <li class="services--item">
-            <img src="images/annai_03.png" alt="金利一覧">
-          </li>
-          <li class="services--item">
-            <img src="images/annai_04.png" alt="手数料">
-          </li>
-          <li class="services--item">
-            <img src="images/annai_05.png" alt="よくあるご質問">
-          </li>
-          <li class="services--item">
-            <img src="images/annai_06.png" alt="投資信託基準価格一覧">
-          </li>
-        </ul>
+          <ul>
+            <li class="services--item">
+              <img src="images/annai_01.png" alt="店舗ATM検索">
+            </li>
+            <li class="services--item">
+              <img src="images/annai_02.png" alt="資料請求">
+            </li>
+            <li class="services--item">
+              <img src="images/annai_03.png" alt="金利一覧">
+            </li>
+            <li class="services--item">
+              <img src="images/annai_04.png" alt="手数料">
+            </li>
+            <li class="services--item">
+              <img src="images/annai_05.png" alt="よくあるご質問">
+            </li>
+            <li class="services--item">
+              <img src="images/annai_06.png" alt="投資信託基準価格一覧">
+            </li>
+          </ul>
+        </div>
+
         <ul class="links">
           <li class="links--item"><img src="images/banner_01.png" alt="口座開設のご案内"></li>
           <li class="links--item"><img src="images/banner_02.png" alt="金融経済ニュース"></li>
@@ -199,53 +218,66 @@
 
     <footer>
       <div class="container sitemap">
-        <ul class="sitemap-column">
+        <div class="sitemap-column">
           <h4>個人のお客様</h4>
-          <li class="sitemap-column--item"><a href="dummy.html">普通預金</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">定期預金·積立</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">外貨預金</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">外債</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">ファンドラップ</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">個人向け国債</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">退職金運用のご案内</a></li>
-        </ul>
+          <ul>
+            <li class="sitemap-column--item"><a href="dummy.html">普通預金</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">定期預金·積立</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">外貨預金</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">外債</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">ファンドラップ</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">個人向け国債</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">退職金運用のご案内</a></li>
+          </ul>
+        </div>
         
-        <ul class="sitemap-column">
+        <div class="sitemap-column">
           <h4>法人のお客様</h4>
-          <li class="sitemap-column--item"><a href="dummy.html">資金調達</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">国際業務・外為取引</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">福利厚生</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">事業戦略・経営相談</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">振込・入金確認の効率化</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">電子記録債権・手形関連</a></li>
-        </ul>
+          <ul>
+            <li class="sitemap-column--item"><a href="dummy.html">資金調達</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">国際業務・外為取引</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">福利厚生</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">事業戦略・経営相談</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">振込・入金確認の効率化</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">電子記録債権・手形関連</a></li>
+          </ul>
+        </div>
         
-        <ul class="sitemap-column">
+        <div class="sitemap-column">
           <h4>株主・投資家の皆様</h4>
-          <li class="sitemap-column--item"><a href="dummy.html">せらくグループの概要</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">決算広告</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">社債情報</a></li>
-        </ul>
+          <ul>
+            <li class="sitemap-column--item"><a href="dummy.html">せらくグループの概要</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">決算広告</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">社債情報</a></li>
+          </ul>
+        </div>
         
-        <ul class="sitemap-column">
+        <div class="sitemap-column">
           <h4>採用情報</h4>
-          <li class="sitemap-column--item"><a href="dummy.html">新卒採用</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">キャリア採用</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">海外現地採用</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">契約社員のお仕事</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">派遣社員のおしごと</a></li>
-        </ul>
+          <ul>
+            <li class="sitemap-column--item"><a href="dummy.html">新卒採用</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">キャリア採用</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">海外現地採用</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">契約社員のお仕事</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">派遣社員のおしごと</a></li>
+          </ul>
+        </div>
         
-        <ul class="sitemap-column">
+        <div class="sitemap-column">
           <h4>せらく銀行について</h4>
-          <li class="sitemap-column--item"><a href="dummy.html">ごあいさつ</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">事業内容</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">企業の社会的責任(CSR)</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">役員一覧</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">組織体制</a></li>
-          <li class="sitemap-column--item"><a href="dummy.html">お問い合わせ先</a></li>
-        </ul>
+          <ul>
+            <li class="sitemap-column--item"><a href="dummy.html">ごあいさつ</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">事業内容</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">企業の社会的責任(CSR)</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">役員一覧</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">組織体制</a></li>
+            <li class="sitemap-column--item"><a href="dummy.html">お問い合わせ先</a></li>
+          </ul>
+        </div>
+
       </div>
+
+
       <div class="footer-nav">
         <ul class="footer-nav-list">
           <li class="footer-nav-list--item"><a href="dummy.html">お客様の個人情報保護について</a></li>
@@ -258,5 +290,27 @@
       <small>Copyright&copy;2015 Seraku Banking Corporation. All Rights Reserved.</small>
     </footer>
   
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="scripts/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slideshow').slick({
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+        $('.slide-nav').slick({
+          draggable: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.slideshow',
+        });
+      });
+    </script>
+
 </body>
 </html>

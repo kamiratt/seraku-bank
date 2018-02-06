@@ -35,14 +35,14 @@ a:link, a:hover, a:visited{
   vertical-align: bottom;
 }
 
-#header-tool{
+.header-tool{
   display: flex;
   font-size: 0.8em;
   margin-left: auto;
   width: 570px;
 }
 
-#bankcode{
+.bankcode{
   font-weight: bold;
   position: relative;
   height: 80px;
@@ -57,12 +57,12 @@ a:link, a:hover, a:visited{
   width: 90%;
 }
 
-#text-size{
+.text-size{
   width: 30%;
   margin-left: auto;
 }
 
-#text-size p{
+.text-size p{
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -72,7 +72,7 @@ a:link, a:hover, a:visited{
   margin-left: auto;
 }
 
-#extools{
+.extools{
   width: 30%;
   margin-left: auto;
 }
@@ -134,16 +134,25 @@ main.container{
   width: 680px;
 }
 
-#top-slide{
-  /* sample */
-  background-color: #ccc;
+.slide-area{
   border: 3px #262d7b solid;
-  height: 300px;
-  margin: 0 auto;
   width: 650px;
+  margin: 0 auto;
 }
 
+.slideshow{
+}
 
+.slide-nav{
+  background-color: #262d7b;
+  height: 80px;
+  padding: 10px;
+  width: 100%;
+}
+
+.slide-nav--thumb img{
+  border: 2px #ffffff solid;
+}
 
 .pages{
   border: 3px #262d7b solid;
@@ -263,14 +272,14 @@ ul.newsdata{
   margin: 15px auto;
 }
 
-ul.services{
+.services{
   border: 5px #262d7b solid;
   margin: 5px auto;
   padding: 0;
   width: 100%;
 }
 
-ul.services li{
+.services li{
   height: 51px;
   margin: 10px auto;
   width: 213px;
@@ -296,10 +305,13 @@ footer{
   margin: 45px auto;
 }
 
-.sitemap-column:first-child{
-  padding-left: 0;
+.sitemap-column{
+  margin: 0 auto;
 }
 
+.sitemap-column ul{
+  padding-left: 0;
+}
 .sitemap-column--item{
   list-style: circle inside;
 }
