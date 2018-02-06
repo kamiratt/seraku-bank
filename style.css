@@ -1,4 +1,5 @@
 @import url(normalize.css);
+
 body{
   font-family: "Droid Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, Roboto, Verdana, sans-serif;
   font-size: 14px;
@@ -6,7 +7,7 @@ body{
 
 a:link, a:hover, a:visited{
   color: #262d7b;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 *{
@@ -29,22 +30,84 @@ a:link, a:hover, a:visited{
 }
 
 #logo img{
-  display: block;
-  height: auto;
+  /*display: flex;*/
+  height: 50px;
+  vertical-align: bottom;
 }
 
 #header-tool{
   display: flex;
+  font-size: 0.8em;
+  margin-left: auto;
   width: 570px;
 }
 
-li#bankcode{
-  font-size: 0.8em;
+#bankcode{
+  font-weight: bold;
+  position: relative;
+  height: 80px;
+  margin-left: auto;
+  width: 30%;
 }
 
-li#text-size img{
-  float: left;
+.shita{
+  bottom: 0;
+  position: absolute;
+  text-align: right;
+  width: 90%;
 }
+
+#text-size{
+  width: 30%;
+  margin-left: auto;
+}
+
+#text-size p{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-size--btn {
+  width: 120px;
+  margin-left: auto;
+}
+
+#extools{
+  width: 30%;
+  margin-left: auto;
+}
+
+ul.english{
+  display: flex;
+  height: 20px;
+  padding: 0;
+}
+
+ul.english li:first-child{
+  border-right: 1px #515151 solid;
+  padding: 0 10px 0 0;
+}
+
+ul.english li{
+  padding-left: 10px;
+}
+
+ul.search{
+  display: flex;
+  height: 28px;
+  padding-left: 0;
+}
+
+.search input[type="text"]{
+  border: 1px #262d7b solid;
+  height: 28px;
+  padding-right: 10px;
+}
+
+.search input[type="image"]{
+  margin-left: -1px;
+}
+
 
 nav{
   background-image: url(images/navi.png), url(images/gnavi_bg.png);
@@ -52,14 +115,19 @@ nav{
   background-repeat: no-repeat, repeat-x;
   border-bottom: 3px #262d7b solid;
   height: 40px;
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 
 /* MAIN */
 
 main{
   display: flex;
-  width: 960px;
+}
+
+main.container{
+  background-image: url(images/main_bg.jpg);
+  background-repeat: repeat-x;
+  padding: 15px 0 0;
 }
 
 .content{
@@ -235,6 +303,11 @@ footer{
 .sitemap-column--item{
   list-style: circle inside;
 }
+.sitemap-column--item a{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 
 .footer-nav{
   align-items: center;
@@ -261,6 +334,10 @@ ul.footer-nav-list{
 
 .footer-nav li:last-child{
   border-right: 1px #515151 solid;
+}
+
+.footer-nav a {
+  color: #068d9d;
 }
 
 small{
