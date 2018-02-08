@@ -16,6 +16,10 @@ a:link, a:hover, a:visited{
   line-height: 1.5;
 }
 
+ul{
+  padding-left: 0;
+}
+
 .container{
   margin: 0 auto;
   width: 960px;
@@ -30,7 +34,6 @@ a:link, a:hover, a:visited{
 }
 
 #logo img{
-  /*display: flex;*/
   height: 50px;
   vertical-align: bottom;
 }
@@ -58,7 +61,6 @@ a:link, a:hover, a:visited{
 }
 
 .text-size{
-  width: 30%;
   margin-left: auto;
 }
 
@@ -68,8 +70,18 @@ a:link, a:hover, a:visited{
 }
 
 .text-size--btn {
-  width: 120px;
-  margin-left: auto;
+  margin: auto;
+  width: 100px;
+}
+
+.text-size--btn ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-size--btn li{
+  display: flex;
+  align-items: flex-end;
 }
 
 .extools{
@@ -115,7 +127,64 @@ nav{
   background-repeat: no-repeat, repeat-x;
   border-bottom: 3px #262d7b solid;
   height: 40px;
+}
+
+nav ul{
   margin: 0 auto;
+  width: 960px;
+}
+
+nav ul li{
+  float: left;
+}
+
+nav ul li a{
+  background-image: url(images/navi.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 37px;
+}
+
+li.personal a{
+  background-position: 0 -40px;
+  width: 181px;
+}
+li.personal a:hover{
+  background-position: 0 0;
+}
+
+li.corporation a{
+  background-position: -181px -40px;
+  width: 180px;
+}
+li.corporation a:hover{
+  background-position: -181px 0;
+}
+
+li.investor a{
+  background-position: -361px -40px;
+  width: 239px;
+}
+li.investor a:hover{
+  background-position: -361px 0;
+}
+
+li.recruit a{
+  background-position: -600px -40px;
+  width: 181px;
+}
+li.recruit a:hover{
+  background-position: -600px 0;
+}
+
+li.company a{
+  background-position: -781px -40px;
+  width: 179px;
+}
+li.company a:hover{
+  background-position: -781px 0;
 }
 
 /* MAIN */
@@ -138,9 +207,6 @@ main.container{
   border: 3px #262d7b solid;
   width: 650px;
   margin: 0 auto;
-}
-
-.slideshow{
 }
 
 .slide-nav{
@@ -171,6 +237,7 @@ main.container{
 ul.pagelist {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 40px;
 }
 
 ul.pagelist li{
@@ -187,33 +254,57 @@ ul.news-area-tab{
   padding: 0;
   margin-bottom: -1px;
   width: 650px;
+  height: 45px;
 }
 
-    .news-area-tab h3.headline{
+    .news-area-tab li.headline{
       background-image: url(images/tab01_on.png);
-      height: 45px;
+      display: block;
+    }
+
+    .news-area-tab li.headline h3{
+      height: 0;
       margin: 0;
+      overflow: hidden;
       padding: 0;
       width: 170px;
     }
-    .news-area-tab h3.release{
+
+    .news-area-tab li.release{
       background-image: url(images/tab02_off.png);
-      height: 45px;
+      display: block;
+    }
+
+    .news-area-tab li.release h3{
+      height: 0;
       margin: 0;
+      overflow: hidden;
       padding: 0;
       width: 170px;
     }
-    .news-area-tab h3.campaign{
+
+    .news-area-tab li.campaign{
       background-image: url(images/tab03_off.png);
-      height: 45px;
+      display: block;
+    }
+
+    .news-area-tab li.campaign h3{
+      height: 0;
       margin: 0;
+      overflow: hidden;
       padding: 0;
       width: 170px;
     }
-    .news-area-tab h3.notice{
+
+    .news-area-tab li.notice{
       background-image: url(images/tab04_off.png);
-      height: 45px;
+      display: block;
+    }
+
+    .news-area-tab li.notice h3{
+      height: 0;
       margin: 0;
+      overflow: hidden;
       padding: 0;
       width: 170px;
     }
@@ -221,6 +312,10 @@ ul.news-area-tab{
 .newspool{
   border: 1px #5a5a5a solid;
   margin-top: 0;
+}
+
+.hidden{
+  display: none;
 }
 
 ul.newsdata{
@@ -246,9 +341,7 @@ ul.newsdata{
   width: 240px;
 }
 
-.nav-right ul{
-  padding: 0;
-}
+
 
 .nav-right h2{
   background-color: #262d7b; 

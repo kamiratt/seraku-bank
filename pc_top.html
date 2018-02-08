@@ -5,7 +5,6 @@
   <title>せらく銀行</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="scripts/slick.css">
-  <link rel="stylesheet" href="scripts/slick-theme.css">
 </head>
 <body>
     <header>
@@ -25,9 +24,11 @@
           <div class="text-size">
             <p>文字の大きさが変更できます</p>
             <div class="text-size--btn">
-              <img src="images/fontsize_s.png" alt="小">
-              <img src="images/fontsize_m.png" alt="中">
-              <img src="images/fontsize_l.png" alt="大">
+              <ul>
+                <li class="f-small"><img src="images/fontsize_s.png" alt="小"></li>
+                <li class="f-mid"><img src="images/fontsize_m.png" alt="中"></li>
+                <li class="f-large"><img src="images/fontsize_l.png" alt="大"></li>
+              </ul>
             </div>
           </div>
 
@@ -47,7 +48,13 @@
 
       </div>
       <nav>
-
+        <ul>
+          <li class="personal"><a href="#">個人のお客様</a></li>
+          <li class="corporation"><a href="#">法人のお客様</a></li>
+          <li class="investor"><a href="#">株主・投資家の皆様</a></li>
+          <li class="recruit"><a href="#">採用情報</a></li>
+          <li class="company"><a href="#">せらく銀行について</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -73,94 +80,168 @@
 
           <h3>個人のお客様</h3>
           <ul class="pagelist">
-            <li class="pagelist--item"><a href="dummy.html">口座をひらく</a></li>
-            <li class="pagelist--item"><a href="dummy.html">住宅ローン</a></li>
-            <li class="pagelist--item"><a href="dummy.html">投資信託</a></li>
-            <li class="pagelist--item"><a href="dummy.html">外貨預金</a></li>
-            <li class="pagelist--item"><a href="dummy.html">バンクイック</a></li>
-            <li class="pagelist--item"><a href="dummy.html">キャンペーン一覧</a></li>
+            <li class="pagelist--item"><a href="#">口座をひらく</a></li>
+            <li class="pagelist--item"><a href="#">住宅ローン</a></li>
+            <li class="pagelist--item"><a href="#">投資信託</a></li>
+            <li class="pagelist--item"><a href="#">外貨預金</a></li>
+            <li class="pagelist--item"><a href="#">バンクイック</a></li>
+            <li class="pagelist--item"><a href="#">キャンペーン一覧</a></li>
           </ul>
         </div>
 
         <div class="pages">
           <h3>法人のお客様</h3>
           <ul class="pagelist">
-            <li class="pagelist--item"><a href="dummy.html">口座をひらく</a></li>
-            <li class="pagelist--item"><a href="dummy.html">でんさい</a></li>
-            <li class="pagelist--item"><a href="dummy.html">CSRの取り組み</a></li>
-            <li class="pagelist--item"><a href="dummy.html">地球環境問題への対応</a></li>
-            <li class="pagelist--item"><a href="dummy.html">地域・社会への貢献</a></li>
-            <li class="pagelist--item"><a href="dummy.html">Global Website</a></li>
+            <li class="pagelist--item"><a href="#">口座をひらく</a></li>
+            <li class="pagelist--item"><a href="#">でんさい</a></li>
+            <li class="pagelist--item"><a href="#">CSRの取り組み</a></li>
+            <li class="pagelist--item"><a href="#">地球環境問題への対応</a></li>
+            <li class="pagelist--item"><a href="#">地域・社会への貢献</a></li>
+            <li class="pagelist--item"><a href="#">Global Website</a></li>
           </ul>
         </div>
 
         <div class="pages">
           <h3>株主・投資家の皆様</h3>
           <ul class="pagelist">
-            <li class="pagelist--item"><a href="dummy.html">決算公告</a></li>
-            <li class="pagelist--item"><a href="dummy.html">社債情報</a></li>
+            <li class="pagelist--item"><a href="#">決算公告</a></li>
+            <li class="pagelist--item"><a href="#">社債情報</a></li>
           </ul>
         </div>
         <div class="pages">
           <h3>採用情報</h3>
           <ul class="pagelist">
-            <li class="pagelist--item"><a href="dummy.html">新卒採用</a></li>
-            <li class="pagelist--item"><a href="dummy.html">中途採用</a></li>
-            <li class="pagelist--item"><a href="dummy.html">海外現地採用</a></li>
+            <li class="pagelist--item"><a href="#">新卒採用</a></li>
+            <li class="pagelist--item"><a href="#">中途採用</a></li>
+            <li class="pagelist--item"><a href="#">海外現地採用</a></li>
           </ul>
         </div>
 
         <div class="news-area">
           <ul class="news-area-tab">
-            <li><h3 class="headline"></h3></li>
-            <li><h3 class="release"></h3></li>
-            <li><h3 class="campaign"></h3></li>
-            <li><h3 class="notice"></h3></li>
+            <li class="headline"><h3>新着情報</h3></li>
+            <li class="release"><h3>ニュースリリース</h3></li>
+            <li class="campaign"><h3>キャンペーン</h3></li>
+            <li class="notice"><h3>お知らせ</h3></li>
           </ul>
-          <div class="newspool">
+
+          <!-- tab 新着情報 -->
+          <div class="newspool tab--headline active">
             <ul class="newsdata">
               <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
               <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
-              <li class="title"><a href="dummy.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
+              <li class="title"><a href="#">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
             </ul>
             <ul class="newsdata">
               <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
               <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
-              <li class="title"><a href="dummy.html">抽選で200人に1万円が当たる!夏の資産運用キャンペーン実施中!</a></li>
+              <li class="title"><a href="#">抽選で200人に1万円が当たる!夏の資産運用キャンペーン実施中!</a></li>
             </ul>
             <ul class="newsdata">
               <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
               <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
-              <li class="title"><a href="dummy.html">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
+              <li class="title"><a href="#">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
             </ul>
             <ul class="newsdata">
               <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
               <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
-              <li class="title"><a href="dummy.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
+              <li class="title"><a href="#">「年金情報流出」を口実にした振り込め詐欺や個人情報の詐取にご注意ください。</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_07.png" alt="ニュースリリース"></li>
+              <li class="title"><a href="#">スウェーデンせらく銀行○○支店開業について pdf(97KB)</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">お客さま情報のSRKグループでの共同利用について</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">LINE公式アカウトを開設しました!</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_07.png" alt="ニュースリリース"></li>
+              <li class="title"><a href="#">【せらくダイレクト】ワンタイムパスワードカードの提供開始について pdf(130KB) </a></li>
             </ul>
             <ul class="newsdata">
               <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
               <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
-              <li class="title"><a href="dummy.html">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
-            </ul>
-            <ul class="newsdata">
-              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
-              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
-              <li class="title"><a href="dummy.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
-            </ul>
-            <ul class="newsdata">
-              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
-              <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
-              <li class="title"><a href="dummy.html">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
-            </ul>
-            <ul class="newsdata">
-              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
-              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
-              <li class="title"><a href="dummy.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
+              <li class="title"><a href="#">抽選でカタログギフトが当たる！保険の見直しキャンペーン実施中</a></li>
             </ul>
           </div>
 
-          
+          <!-- tab ニュースリリース -->
+          <div class="newspool tab--release hidden">
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_07.png" alt="ニュースリリース"></li>
+              <li class="title"><a href="#">スウェーデンせらく銀行○○支店開業について pdf(97KB)</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_07.png" alt="ニュースリリース"></li>
+              <li class="title"><a href="#">【せらくダイレクト】ワンタイムパスワードカードの提供開始について pdf(130KB) </a></li>
+            </ul>
+          </div>
+
+          <!-- tab キャンペーン -->
+          <div class="newspool tab--campaign hidden">
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
+              <li class="title"><a href="#">抽選で200人に1万円が当たる!夏の資産運用キャンペーン実施中!</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
+              <li class="title"><a href="#">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
+              <li class="title"><a href="#">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_08.png" alt="キャンペーン"></li>
+              <li class="title"><a href="#">平成27年5月25日(月)より「子供口座開設キャンペーン」を開始します</a></li>
+            </ul>
+          </div>
+
+          <!-- tab お知らせ -->
+          <div class="newspool tab--notice hidden">
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、絶対に入力しないでください!</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">お客さま情報のSRKグループでの共同利用について</a></li>
+            </ul>
+            <ul class="newsdata">
+              <li class="date"><time datetime="2015-06-10">2015年6月10日</time></li>
+              <li class="category"><img src="images/category_09.png" alt="お知らせ"></li>
+              <li class="title"><a href="#">LINE公式アカウトを開設しました!</a></li>
+            </ul>
+          </div>
+
+
             
         </div>
 
@@ -221,57 +302,57 @@
         <div class="sitemap-column">
           <h4>個人のお客様</h4>
           <ul>
-            <li class="sitemap-column--item"><a href="dummy.html">普通預金</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">定期預金·積立</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">外貨預金</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">外債</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">ファンドラップ</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">個人向け国債</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">退職金運用のご案内</a></li>
+            <li class="sitemap-column--item"><a href="#">普通預金</a></li>
+            <li class="sitemap-column--item"><a href="#">定期預金·積立</a></li>
+            <li class="sitemap-column--item"><a href="#">外貨預金</a></li>
+            <li class="sitemap-column--item"><a href="#">外債</a></li>
+            <li class="sitemap-column--item"><a href="#">ファンドラップ</a></li>
+            <li class="sitemap-column--item"><a href="#">個人向け国債</a></li>
+            <li class="sitemap-column--item"><a href="#">退職金運用のご案内</a></li>
           </ul>
         </div>
         
         <div class="sitemap-column">
           <h4>法人のお客様</h4>
           <ul>
-            <li class="sitemap-column--item"><a href="dummy.html">資金調達</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">国際業務・外為取引</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">福利厚生</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">事業戦略・経営相談</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">振込・入金確認の効率化</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">電子記録債権・手形関連</a></li>
+            <li class="sitemap-column--item"><a href="#">資金調達</a></li>
+            <li class="sitemap-column--item"><a href="#">国際業務・外為取引</a></li>
+            <li class="sitemap-column--item"><a href="#">福利厚生</a></li>
+            <li class="sitemap-column--item"><a href="#">事業戦略・経営相談</a></li>
+            <li class="sitemap-column--item"><a href="#">振込・入金確認の効率化</a></li>
+            <li class="sitemap-column--item"><a href="#">電子記録債権・手形関連</a></li>
           </ul>
         </div>
         
         <div class="sitemap-column">
           <h4>株主・投資家の皆様</h4>
           <ul>
-            <li class="sitemap-column--item"><a href="dummy.html">せらくグループの概要</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">決算広告</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">社債情報</a></li>
+            <li class="sitemap-column--item"><a href="#">せらくグループの概要</a></li>
+            <li class="sitemap-column--item"><a href="#">決算広告</a></li>
+            <li class="sitemap-column--item"><a href="#">社債情報</a></li>
           </ul>
         </div>
         
         <div class="sitemap-column">
           <h4>採用情報</h4>
           <ul>
-            <li class="sitemap-column--item"><a href="dummy.html">新卒採用</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">キャリア採用</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">海外現地採用</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">契約社員のお仕事</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">派遣社員のおしごと</a></li>
+            <li class="sitemap-column--item"><a href="#">新卒採用</a></li>
+            <li class="sitemap-column--item"><a href="#">キャリア採用</a></li>
+            <li class="sitemap-column--item"><a href="#">海外現地採用</a></li>
+            <li class="sitemap-column--item"><a href="#">契約社員のお仕事</a></li>
+            <li class="sitemap-column--item"><a href="#">派遣社員のおしごと</a></li>
           </ul>
         </div>
         
         <div class="sitemap-column">
           <h4>せらく銀行について</h4>
           <ul>
-            <li class="sitemap-column--item"><a href="dummy.html">ごあいさつ</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">事業内容</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">企業の社会的責任(CSR)</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">役員一覧</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">組織体制</a></li>
-            <li class="sitemap-column--item"><a href="dummy.html">お問い合わせ先</a></li>
+            <li class="sitemap-column--item"><a href="#">ごあいさつ</a></li>
+            <li class="sitemap-column--item"><a href="#">事業内容</a></li>
+            <li class="sitemap-column--item"><a href="#">企業の社会的責任(CSR)</a></li>
+            <li class="sitemap-column--item"><a href="#">役員一覧</a></li>
+            <li class="sitemap-column--item"><a href="#">組織体制</a></li>
+            <li class="sitemap-column--item"><a href="#">お問い合わせ先</a></li>
           </ul>
         </div>
 
@@ -280,11 +361,11 @@
 
       <div class="footer-nav">
         <ul class="footer-nav-list">
-          <li class="footer-nav-list--item"><a href="dummy.html">お客様の個人情報保護について</a></li>
-          <li class="footer-nav-list--item"><a href="dummy.html">金融商品勧誘方針</a></li>
-          <li class="footer-nav-list--item"><a href="dummy.html">法人等のお客様の情報について</a></li>
-          <li class="footer-nav-list--item"><a href="dummy.html">本サイトのご利用にあたって</a></li>
-          <li class="footer-nav-list--item"><a href="dummy.html">反社会的勢力に対する基本方針</a></li>
+          <li class="footer-nav-list--item"><a href="#">お客様の個人情報保護について</a></li>
+          <li class="footer-nav-list--item"><a href="#">金融商品勧誘方針</a></li>
+          <li class="footer-nav-list--item"><a href="#">法人等のお客様の情報について</a></li>
+          <li class="footer-nav-list--item"><a href="#">本サイトのご利用にあたって</a></li>
+          <li class="footer-nav-list--item"><a href="#">反社会的勢力に対する基本方針</a></li>
         </ul>
       </div>
       <small>Copyright&copy;2015 Seraku Banking Corporation. All Rights Reserved.</small>
@@ -292,24 +373,61 @@
   
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="scripts/slick.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
     <script>
-      $(document).ready(function(){
+
+      // スライドショー
+      $(function(){
         $('.slideshow').slick({
           arrows: false,
           autoplay: true,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 3000,
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1
         });
         $('.slide-nav').slick({
-          draggable: true,
-          slidesToShow: 3,
-          slidesToScroll: 1,
           asNavFor: '.slideshow',
+          draggable: true,
+          focusOnSelect: true,
+          slidesToShow: 3,
+          slidesToScroll: 1
         });
       });
+
+      // タブ切り替え
+      $(function() {
+      $('.news-area-tab li').click(function() {
+        var index = $('.news-area-tab li').index(this);
+        $('.newspool').css('display','none');
+        $('.newspool').eq(index).css('display','block');
+        $('.newspool').removeClass('hidden');
+        $(this).addClass('active')
+      });
+    });
+
+      // 画像置換
+      $(function(){
+        // 小
+        $('.f-small img').on('mouseover', function(){
+          $(this).attr('src','images/fontsize_s_on.png');
+        }).on('mouseout',function(){
+          $(this).attr('src','images/fontsize_s.png');
+        });
+        // 中
+        $('.f-mid img').on('mouseover', function(){
+          $(this).attr('src','images/fontsize_m_on.png');
+        }).on('mouseout',function(){
+          $(this).attr('src','images/fontsize_m.png');
+        });
+        // 大
+        $('.f-large img').on('mouseover', function(){
+          $(this).attr('src','images/fontsize_l_on.png');
+        }).on('mouseout',function(){
+          $(this).attr('src','images/fontsize_l.png');
+        });
+      });
+
     </script>
 
 </body>
