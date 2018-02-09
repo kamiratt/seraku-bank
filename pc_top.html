@@ -11,7 +11,7 @@
     <header>
       <div class="container header-inner">
         <div class="logo">
-          <img src="images/logop.ng" alt="せらく銀行">
+          <img src="images/logo.png" alt="せらく銀行">
         </div>
 
 
@@ -374,7 +374,10 @@
   
 
     <script src="scripts/flexibility.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <script src="scripts/slick.min.js"></script>
     <script>
 
@@ -402,9 +405,11 @@
       $('.news-area-tab li').click(function() {
         var index = $('.news-area-tab li').index(this);
         $('.newspool').css('display','none');
+        $('.news-area-tab li').removeAttr('style');
+        $('.headline').css('background-image', 'url(images/tab01_off.png)');
         $('.newspool').eq(index).css('display','block');
         $('.newspool').removeClass('hidden');
-        $(this).addClass('active')
+        $(this).addClass('active').css('background-image', 'url(images/tab0'+(index+1)+'_on.png)');
       });
     });
 

@@ -266,6 +266,12 @@ ul.news-area-tab{
   height: 45px;
 }
 
+  /*'background-image': 'url(images/tab0'+index+'_on.png)'*/
+
+    .news-area-tab li:hover{
+      cursor: pointer;
+    }
+    
     .news-area-tab li.headline{
       background-image: url(images/tab01_on.png);
       display: block;
